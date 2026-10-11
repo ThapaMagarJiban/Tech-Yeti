@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Tech-Yeti</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-inner">
+  <a class="brand" href="index.html"><span class="brand-mark"><img src="assets/techyeti-logo-mark.png" alt="Tech-Yeti logo"></span><span class="brand-copy">Tech-Yeti<small>Software Solutions</small></span></a>
+  <button class="menu-button" data-menu-button aria-label="Open navigation">☰</button>
+  <nav class="nav" data-nav><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="team.html">Team Portfolio</a><a class="nav-cta active" href="contact.html">Contact</a></nav>
+</div></header>
+<main id="main">
+  <section class="page-hero"><div class="container"><span class="eyebrow">Start a conversation</span><h1>Tell Tech-Yeti what you want to build.</h1><p>The contact page helps visitors discuss a possible project, product or demonstration.</p></div></section>
+  <section class="section"><div class="container"><div class="form-card contact-form-wide">
+    <span class="eyebrow">Get in touch</span><h2>Request information or a product demo</h2>
+    <p class="muted">Complete the form and our team will receive your request by email.</p>
+    <form id="demoRequestForm">
+      <div class="form-grid">
+        <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" maxlength="120" required></div>
+        <div class="field"><label for="company">Company / organisation *</label><input id="company" name="company" autocomplete="organization" maxlength="150" required></div>
+        <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+        <div class="field"><label for="dateTime">Preferred demo date and time *</label><input id="dateTime" name="dateTime" type="datetime-local" required></div>
+        <div class="field full"><label for="message">Message / requirements *</label><textarea id="message" name="message" placeholder="Tell us what you would like to discuss..." maxlength="3000" required></textarea></div>
+      </div>
+      <button class="btn btn-primary" id="demoSubmit" type="submit">Request a Demo →</button>
+      <div class="notice" id="demoStatus" role="status" aria-live="polite" hidden></div>
+    </form>
+  </div></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-bottom">© <span data-year></span> Tech-Yeti Software Solutions</div></div></footer>
+<script src="assets/site.js"></script>
+<script src="assets/demo-request.js" defer></script>
+</body></html>
