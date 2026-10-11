@@ -48,7 +48,7 @@
         throw new Error(result.message || "The email service could not confirm your request. Please try again.");
       }
 
-      status.textContent = "Thank you! Your request was submitted. If this is the first submission, Tech-Yeti must confirm the activation email before future enquiries can be delivered.";
+      status.textContent = "Thank you! Your request was submitted.";
       form.reset();
     } catch (error) {
       console.error("Demo request submission failed:", error);
